@@ -4,13 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.activity.MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar">
+
+    </include>
 
     <TextView
         android:id="@+id/resultado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="80dp"
         android:text="Olá"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +39,7 @@
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="536dp"
         android:onClick="geraNumerosAleatorios"
         android:text="Start"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,43 +47,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnVoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="640dp"
-        android:onClick="geraNumerosAleatorios"
-        android:text="HOME"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnFavoritos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="640dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:onClick="geraNumerosAleatorios"
-        android:text="FAVORITOS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toEndOf="@+id/btnVoltar"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="274dp"
         android:layout_height="224dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="272dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sorteio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
