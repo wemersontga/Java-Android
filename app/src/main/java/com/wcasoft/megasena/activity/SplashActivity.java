@@ -7,13 +7,13 @@ import android.os.Bundle;
 
 import com.wcasoft.megasena.R;
 
-public class MainActivityHome extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Theme_Splash); //muda o tema da com.wcasoft.megasena.com.wcasoft.megasena.activity.
-            setContentView(R.layout.activity_main_home);
+        //setTheme(R.style.Theme_Splash); //muda o tema da activity.
+            setContentView(R.layout.activity_splash);
 
             Thread thread = new Thread(){
                 public void run(){
@@ -24,7 +24,7 @@ public class MainActivityHome extends AppCompatActivity {
                         e.printStackTrace();
                     }finally {
                         //startActivity(new Intent(MainActivityHome.this, MainActivity.class));
-                        Intent ini = new Intent(MainActivityHome.this, MainActivity.class);
+                        Intent ini = new Intent(SplashActivity.this, MainActivity.class);
                         startActivity(ini);
                     }
 

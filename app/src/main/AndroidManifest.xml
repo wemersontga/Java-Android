@@ -9,20 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
 
-        <!-- Thema.Splash"> -->
-    <activity android:name=".activity.MainActivityHome" android:theme="@style/Theme.Splash">
+        <activity android:name=".activity.CadastroActivity"
+            android:theme="@style/Theme.Generico">
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.Generico">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    </activity>
+        </activity> <!-- Thema.Splash"> -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.Splash">
 
-        <!-- Thema.Generico"> -->
-        <activity android:name=".activity.MainActivity" android:theme="@style/Theme.Generico">
+
+        </activity> <!-- Thema.Generico"> -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.Generico">
 
         </activity>
-        </application>
+    </application>
 
 </manifest>
 
