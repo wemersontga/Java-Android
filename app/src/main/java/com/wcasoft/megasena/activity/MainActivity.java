@@ -33,15 +33,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Theme_Generico); //muda o tema da com.wcasoft.megasena.com.wcasoft.megasena.activity.
+        //setTheme(R.style.Theme_Generico); //muda o tema da activity.
         setContentView(R.layout.activity_main);
+
+        txtResult1 = findViewById(R.id.resultado1);
+        txtResult2 = findViewById(R.id.resultado2);
 
         Toolbar toolbar = findViewById(R.id.toolbarPrincipal); //import androidx.appcompat.widget.Toolbar;
         toolbar.setTitle("MegaSorte");
         setSupportActionBar(toolbar);
-
-        txtResult1 = findViewById(R.id.resultado1);
-        txtResult2 = findViewById(R.id.resultado2);
 
     }
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void geraNumerosAleatorios(View v) {
+    public void geraNumerosAleatorios(View v) { //não precisa usar (View view) como parâmetro.
 
         Random rand = new Random();
         v1 = rand.nextInt(9) + 1;
