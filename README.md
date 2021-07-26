@@ -4,13 +4,11 @@
 
 2- no arquivo build.gradle (Project: MegaSena)
 
-remover o conteudo da tag:
-ext {
+remover o conteudo da tag: ext { }
 
-}
+ou apague ela por completo,
 
-ou
-Apague a tag ext{ } e em seguida rebuild o projeto e execute normalmente.
+em seguida rebuild o projeto e execute normalmente.
 
 
 
