@@ -1,8 +1,8 @@
 # Projeto Sorteio de jogos da mega sena.
  
-Os arquivos do projeto devem estar dentro do diretório 'AndroidStudioProjects/MegaSena' antes de ser importados para o android studio.
+1- Os arquivos do projeto devem estar dentro do diretório 'AndroidStudioProjects/MegaSena' antes de ser importados para o android studio.
 
-no arquivo build.gradle (Project: MegaSena)
+2- no arquivo build.gradle (Project: MegaSena)
 
 remover o conteudo da tag:
 ext {
